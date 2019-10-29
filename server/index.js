@@ -14,7 +14,7 @@ const db = mysql.createConnection({host:'localhost',user:'root',password:'',data
 const MongoClient = require("mongodb").MongoClient;
 
 
-const mailjet = require('node-mailjet').connect('71b46f64daef6e11b4868ce7dd5a4e52', '252dfda1bd353bfa4d2bcbf8f1a26785')
+const mailjet = require('node-mailjet').connect('___', '___')
 
 try {
 
