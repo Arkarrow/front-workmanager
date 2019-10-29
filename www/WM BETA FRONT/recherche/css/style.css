@@ -1,0 +1,269 @@
+html{
+	font-family: Montsserrat, sans-serif;
+}
+
+html .bcg{
+	position: relative;
+	margin: -10px;
+	padding: -10px;
+}
+body {
+    overflow-x: hidden;
+}
+.s1{
+	position: relative;
+	z-index: 10px;
+	top: -71em;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: -75em;
+  left: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  right: 95px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  position: relative;
+  right: 100px;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  right: 0;
+  margin: -100px -50px 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	text-decoration: none;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+	transition: .3s;
+}
+a:hover{
+	transition: .3s;
+	color: tomato;
+}
+.resultat{
+	height: 80px;
+	width: 90%;
+	position: relative;
+	z-index: 10px;
+	background: #fff;
+	top: -72em;
+	left: 4.5em;
+	border: 0.5px solid black;
+}
+.resultat h1{
+	font-size: 20px;
+	position: relative;
+	left: 2em;
+	top: 0.6em;
+}
+.coeur{
+	width: 70%;
+	height: 100%;
+	background: #fff;
+	position: relative;
+	z-index: 10px;
+	top: -71em;
+	border: 0.5px solid black;
+	left: 4.45em;
+}
+.filtre{
+	width: 19%;
+	height: 100%;
+	background: #fff;
+	position: relative;
+	z-index: 10px;
+	top: -117.82em;
+	border: 0.5px solid black;
+	left: 67em;
+}
+.dropdown {
+  position: absolute;
+  top:5.5%;
+  transform: translateY(-50%);
+}
+
+
+.dropdown dd,
+.dropdown dt {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown ul {
+  margin: -1px 0 0 0;
+}
+
+.dropdown dd {
+  position: relative;
+}
+
+.dropdown a,
+.dropdown a:visited {
+  color: black;
+  text-decoration: none;
+  outline: none;
+  font-size: 25px;
+}
+
+.dropdown dt a {
+  background-color: #fff;
+  display: block;
+  padding: 11px 0px 0px 7px;
+  min-height: 25px;
+  line-height: 31px;
+  overflow: hidden;
+  width: 260px;
+}
+
+.dropdown dt a span,
+.multiSel span {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 3px 2px 76;
+  top: 5px;
+}
+
+.dropdown dd ul {
+  background-color: #4F6877;
+  border: 0;
+  color: #fff;
+  display: none;
+  left: 0px;
+  padding: 2px 15px 2px 5px;
+  position: absolute;
+  top: 2px;
+  width: 247px;
+  list-style: none;
+  height: 100px;
+  overflow: auto;
+}
+
+.dropdown span.value {
+  display: none;
+}
+
+.dropdown dd ul li a {
+  padding: 5px;
+  display: block;
+}
+
+.dropdown dd ul li a:hover {
+  background-color: #fff;
+}
+
+button {
+  position: relative;
+  top: 47.85em;
+  background-color: #fff;
+  width: 267px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover{
+  background: #cdcdcd;
+}
+.hida{
+  text-align: center;
+}
+.hida img{
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-transition:-webkit-transform .9s; 
+  -moz-transition:-moz-transform .9s;    
+  -o-transition:-o-transform .9s;        
+  -ms-transition:-ms-transform .9s;        
+  transition:transform .9s;
+}
+.hida img:hover{
+   transform: rotate(90deg);
+}

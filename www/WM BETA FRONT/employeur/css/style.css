@@ -1,0 +1,255 @@
+html{
+	font-family: Montsserrat, sans-serif;
+	}
+html .bcg{
+	filter: blur(2px);
+	position: absolute;
+	left: -4px;
+	top: -5px;
+	right: -5px;
+	}
+.s1 img{
+	position: absolute;
+	z-index: 10px;
+	left: 1em;
+	top: 0px;
+	}
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #cdcdcd;
+      overflow-x: hidden;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323; 
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: aqua;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 40px;
+  left: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  right: 95px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  position: relative;
+  right: 100px;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  right: 0;
+  margin: -100px -50px 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.img1{
+	position: absolute;
+	top: 18em;
+	right: 10px;
+}
+
+.workmanager{
+	position: relative;
+	z-index: 10;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	top: 1em;
+	font-family: 'Righteous', cursive;
+	width: 10em;
+	left: 6.8em;
+}
+.recherche_p{
+	position: relative;
+	z-index: 10px;
+	text-align: center;
+	top: 6em;
+}
+#searchthis #search{
+	border-style: solid;
+	border-width: 1.2px; 
+	border-color: #cdcdcd; 
+	background: #fff;
+	padding: 8px 10px 8px 10px;
+	font-size: 20px; 
+	outline:0 ! important;
+	border-radius: 15px;
+}
+#searchthis #search-btn{
+	position: relative;
+	top: 14.5px;	
+	right: 0.2em;
+	padding: 4px 5px 4px 8px;
+	background: #fff;
+	transition: 0.6s;
+		border-radius: 15px;
+
+}
+#searchthis #search-btn:hover {
+
+	background-color: #70C1FF;
+}
+.bcg2{
+	position: relative;
+	z-index: 10px;
+	top: 18em;
+	filter: blur(2px);
+	
+}
+.img2{
+	position: relative;
+	z-index: 10px;
+	top: 35em;
+	left: -35em;
+}
+.text{
+	position: relative;
+	background: #E5F7FF;
+	height: 400px;
+	width: 300px;
+	left: 60em;
+	top: 2em;
+	-webkit-box-shadow: 3px 4px 17px 5px rgba(0,0,0,0.47);
+	-moz-box-shadow: 3px 4px 17px 5px rgba(0,0,0,0.47);
+	box-shadow: 3px 4px 17px 5px rgba(0,0,0,0.47);
+	border-radius: 22px 22px 22px 22px;
+	-moz-border-radius: 22px 22px 22px 22px;
+	-webkit-border-radius: 22px 22px 22px 22px;
+	border: 0px outset #000000;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;	
+}
+.text:hover{
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.slogan2{
+	position: relative;
+	z-index: 10px;
+	top: 14em;
+	color: black;
+	font-size: 20px;
+	left: 8em;
+}
+.slogan3{
+	position: relative;
+	z-index: 10px;
+	top: 13.5em;
+	color: black;
+	font-size: 20px;
+	left: 11em;
+}
+.p{
+	color: black;
+	padding: 25px;
+	margin: 8px;
+	text-align: center;
+}
+.p2{
+	color: black;
+	padding: 20px;
+	margin: 8px;
+	text-align: center;
+}
+.p3{
+	color: black;
+	padding: 20px;
+	margin: 8px;
+	text-align: center;
+}
+.footer{
+	position: relative;
+	top: 10em;
+}
